@@ -897,3 +897,7 @@ img[src$="/img/matrix.svg"] {
 .repository .header-wrapper {
   background-color: var(--color-box-body);
 }
+
+.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input {
+  background-color: #595959;
+}
