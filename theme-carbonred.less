@@ -108,6 +108,8 @@
   --color-placeholder-text: #6a737d;
   --color-editor-line-highlight: var(--color-primary-light-5);
   --color-project-board-bg: var(--color-secondary-light-2);
+  --color-nav-bg: var(--color-body);
+  --color-nav-hover-bg: var(--color-hover);
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -810,4 +812,70 @@ img[src$="/img/matrix.svg"] {
 
 .monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input {
   background-color: #595959;
+}
+
+.ui.blue.label, .ui.blue.labels .label, .ui.primary.label, .ui.primary.labels .label {
+    background-color: var(--color-secondary)!important;
+    border-color: var(--color-primary-dark-2)!important;
+}
+
+.ui.blue.button, .ui.blue.buttons .button, .ui.primary.button, .ui.primary.buttons .button {
+    background-color: #070707!important;
+}
+
+.ui.blue.button:hover, .ui.blue.buttons .button:hover, .ui.primary.button:hover, .ui.primary.buttons .button:hover {
+    background-color: #1c1c1c!important;
+}
+
+.ui.green.labels .label, .ui.ui.ui.green.label {
+    background-color: #1c1c1c!important;
+    border-color: #21ba45!important;
+    color: #fff;
+}
+
+.ui.red.labels .label, .ui.ui.ui.red.label {
+    background-color: #1c1c1c!important;
+    border-color: #db2828!important;
+    color: #fff;
+}
+
+::selection, ::-moz-selection {
+  background: var(--color-grey);
+  color: var(--color-secondary)!important;
+}
+
+.CodeMirror, .CodeMirror-selected, ::selection {
+    background: var(--color-primary)!important;
+    color: var(--color-secondary)!important;
+}
+
+.markup a, .ui.breadcrumb a {
+    color: var(--color-primary-light-7);
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-primary);
+    transition-property: all;
+}
+
+.markup a:hover, .ui.breadcrumb a:hover {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    background: #fff;
+    background-color: #fff;
+}
+
+.markup .anchor {
+    border-bottom: none;
+}
+
+.markup .anchor:hover {
+    color: var(--color-primary-light-7);
+    border-bottom: none;
+    background: var(--color-body);
+    background-color: var(--color-body);
+}
+
+.mtk1, .mtk10 {
+    color: #6D7178!important;
 }
